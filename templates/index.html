@@ -2,6 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <nav>
+
+
+        <div class="menu">
+            <ul>
+                <li><a href={% url 'index' %}><u>Main</u></a></li>
+                <li><a href={% url 'register' %}><u>Sign in</u></a></li>
+                <li><a href={% url 'login' %}><u>Log in</u></a></li>
+            </ul>
+        </div>
+    </nav>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
