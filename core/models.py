@@ -9,14 +9,13 @@ class CustomUser(User):
 
 class Applications(models.Model):
     name = models.CharField(
-        max_lenght = 50
+        max_length = 255
     )
     email = models.EmailField(
         max_length=255,
         unique=True
     )
     phone = models.IntegerField(
-        max_lenght = 50
     )
     date =  models.DateTimeField(
         auto_now=True

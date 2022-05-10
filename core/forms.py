@@ -19,7 +19,7 @@ class UserRegistrationForm(ModelForm):
 
     class Meta:
         model = CustomUser
-        exclude = ( 'is_superuser', 'groups', 'user_permissions', 'is_staff', 'is_active', 'date_joined')
+        exclude = ('username','last_login','password', 'is_superuser', 'groups', 'user_permissions', 'is_staff', 'is_active', 'date_joined')
 
     def check_pass(self):
         data = self.changed_data
