@@ -146,10 +146,11 @@ a {
     z-index: 1;
 }
 .card {
-    position: relative;
-    width: 1500px;
-    height: 400px;
-    margin: 30px;
+    position: absolute;
+    width: 1400px;
+    height: 700px;
+    margin-bottom: -300px;
+    margin-right: -300px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
