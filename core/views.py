@@ -23,4 +23,10 @@ def register(request):
 
 def logout(request):
     auth_logout(request)
-    return render(request, 'index.html')
+    return render(request, 'application.html')
+
+def application(request):
+    if request.method == 'GET':
+
+        return render(request, 'application.html' )
+
