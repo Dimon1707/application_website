@@ -1,22 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
+    <a href="#" class="home">Application</a>
+    <div class="menu-toggle"></div>
+    <nav>
+        <ul>
+            <li><a href={% url 'index' %} ><u>Home</u></a></li>
+            <li><a href={% url 'application' %}class="active"><u>Applicate</u></a></li>
+            <li><a href={% url 'register' %}><u>Sign in</u></a></li>
+            <li><a href={% url 'login' %}><u>Log in</u></a></li>
+        </ul>
+    </nav>
+    <div class="clearfix"></div>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
+    <link rel="stylesheet" href="/static/styleapplication.css">
+</header>
 <body>
-    <nav>
 
-
-        <div class="menu">
-            <ul>
-                <li><a href={% url 'index' %}><u>Main</u></a></li>
-                <li><a href={% url 'register' %}><u>Sign in</u></a></li>
-                <li><a href={% url 'login' %}><u>Log in</u></a></li>
-                <li><a href={% url 'application' %}><u>Applicate</u></a></li>
-            </ul>
-        </div>
-    </nav>
     <form method="POST">
     {% csrf_token %}
     <input name="username" placeholder="username">
